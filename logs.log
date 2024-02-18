@@ -17589,3 +17589,1269 @@ Alternately, you can install this by running `pip install pycaret[models]`
 2024-02-18 10:21:57,578:INFO:_display_container: 4
 2024-02-18 10:21:57,578:INFO:DBSCAN(n_jobs=-1)
 2024-02-18 10:21:57,578:INFO:create_model() successfully completed......................................
+2024-02-18 10:26:13,162:INFO:PyCaret ClusteringExperiment
+2024-02-18 10:26:13,162:INFO:Logging name: cluster-default-name
+2024-02-18 10:26:13,162:INFO:ML Usecase: MLUsecase.CLUSTERING
+2024-02-18 10:26:13,162:INFO:version 3.2.0
+2024-02-18 10:26:13,162:INFO:Initializing setup()
+2024-02-18 10:26:13,162:INFO:self.USI: 10fb
+2024-02-18 10:26:13,162:INFO:self._variable_keys: {'exp_id', 'log_plots_param', 'X', 'html_param', 'n_jobs_param', '_ml_usecase', 'pipeline', 'idx', 'data', 'gpu_param', 'USI', 'memory', 'exp_name_log', 'gpu_n_jobs_param', 'seed', 'logging_param', '_available_plots'}
+2024-02-18 10:26:13,162:INFO:Checking environment
+2024-02-18 10:26:13,162:INFO:python_version: 3.11.4
+2024-02-18 10:26:13,163:INFO:python_build: ('tags/v3.11.4:d2340ef', 'Jun  7 2023 05:45:37')
+2024-02-18 10:26:13,163:INFO:machine: AMD64
+2024-02-18 10:26:13,163:INFO:platform: Windows-10-10.0.22621-SP0
+2024-02-18 10:26:13,168:INFO:Memory: svmem(total=7887228928, available=502710272, percent=93.6, used=7384518656, free=502710272)
+2024-02-18 10:26:13,168:INFO:Physical Core: 6
+2024-02-18 10:26:13,168:INFO:Logical Core: 12
+2024-02-18 10:26:13,168:INFO:Checking libraries
+2024-02-18 10:26:13,168:INFO:System:
+2024-02-18 10:26:13,168:INFO:    python: 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]
+2024-02-18 10:26:13,168:INFO:executable: c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\python.exe
+2024-02-18 10:26:13,168:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-02-18 10:26:13,168:INFO:PyCaret required dependencies:
+2024-02-18 10:26:13,168:INFO:                 pip: 23.1.2
+2024-02-18 10:26:13,168:INFO:          setuptools: 69.0.3
+2024-02-18 10:26:13,168:INFO:             pycaret: 3.2.0
+2024-02-18 10:26:13,168:INFO:             IPython: 8.9.0
+2024-02-18 10:26:13,168:INFO:          ipywidgets: 8.1.1
+2024-02-18 10:26:13,168:INFO:                tqdm: 4.65.0
+2024-02-18 10:26:13,168:INFO:               numpy: 1.25.2
+2024-02-18 10:26:13,168:INFO:              pandas: 1.5.3
+2024-02-18 10:26:13,168:INFO:              jinja2: 3.1.2
+2024-02-18 10:26:13,168:INFO:               scipy: 1.10.1
+2024-02-18 10:26:13,168:INFO:              joblib: 1.3.1
+2024-02-18 10:26:13,168:INFO:             sklearn: 1.2.2
+2024-02-18 10:26:13,168:INFO:                pyod: 1.1.3
+2024-02-18 10:26:13,169:INFO:            imblearn: 0.11.0
+2024-02-18 10:26:13,169:INFO:   category_encoders: 2.6.3
+2024-02-18 10:26:13,169:INFO:            lightgbm: 4.2.0
+2024-02-18 10:26:13,169:INFO:               numba: 0.59.0
+2024-02-18 10:26:13,169:INFO:            requests: 2.31.0
+2024-02-18 10:26:13,169:INFO:          matplotlib: 3.6.0
+2024-02-18 10:26:13,169:INFO:          scikitplot: 0.3.7
+2024-02-18 10:26:13,169:INFO:         yellowbrick: 1.5
+2024-02-18 10:26:13,169:INFO:              plotly: 5.18.0
+2024-02-18 10:26:13,169:INFO:    plotly-resampler: Not installed
+2024-02-18 10:26:13,169:INFO:             kaleido: 0.2.1
+2024-02-18 10:26:13,169:INFO:           schemdraw: 0.15
+2024-02-18 10:26:13,169:INFO:         statsmodels: 0.14.1
+2024-02-18 10:26:13,169:INFO:              sktime: 0.21.1
+2024-02-18 10:26:13,169:INFO:               tbats: 1.1.3
+2024-02-18 10:26:13,169:INFO:            pmdarima: 2.0.4
+2024-02-18 10:26:13,169:INFO:              psutil: 5.9.4
+2024-02-18 10:26:13,169:INFO:          markupsafe: 2.1.3
+2024-02-18 10:26:13,169:INFO:             pickle5: Not installed
+2024-02-18 10:26:13,169:INFO:         cloudpickle: 3.0.0
+2024-02-18 10:26:13,169:INFO:         deprecation: 2.1.0
+2024-02-18 10:26:13,169:INFO:              xxhash: 3.4.1
+2024-02-18 10:26:13,169:INFO:           wurlitzer: Not installed
+2024-02-18 10:26:13,169:INFO:PyCaret optional dependencies:
+2024-02-18 10:26:13,169:INFO:                shap: Not installed
+2024-02-18 10:26:13,169:INFO:           interpret: Not installed
+2024-02-18 10:26:13,169:INFO:                umap: Not installed
+2024-02-18 10:26:13,169:INFO:     ydata_profiling: Not installed
+2024-02-18 10:26:13,169:INFO:  explainerdashboard: Not installed
+2024-02-18 10:26:13,169:INFO:             autoviz: Not installed
+2024-02-18 10:26:13,169:INFO:           fairlearn: Not installed
+2024-02-18 10:26:13,169:INFO:          deepchecks: Not installed
+2024-02-18 10:26:13,169:INFO:             xgboost: 2.0.3
+2024-02-18 10:26:13,170:INFO:            catboost: 1.2.2
+2024-02-18 10:26:13,170:INFO:              kmodes: Not installed
+2024-02-18 10:26:13,170:INFO:             mlxtend: 0.22.0
+2024-02-18 10:26:13,170:INFO:       statsforecast: Not installed
+2024-02-18 10:26:13,170:INFO:        tune_sklearn: Not installed
+2024-02-18 10:26:13,170:INFO:                 ray: Not installed
+2024-02-18 10:26:13,170:INFO:            hyperopt: Not installed
+2024-02-18 10:26:13,170:INFO:              optuna: Not installed
+2024-02-18 10:26:13,170:INFO:               skopt: Not installed
+2024-02-18 10:26:13,170:INFO:              mlflow: Not installed
+2024-02-18 10:26:13,170:INFO:              gradio: Not installed
+2024-02-18 10:26:13,170:INFO:             fastapi: 0.100.0
+2024-02-18 10:26:13,170:INFO:             uvicorn: Not installed
+2024-02-18 10:26:13,170:INFO:              m2cgen: Not installed
+2024-02-18 10:26:13,170:INFO:           evidently: Not installed
+2024-02-18 10:26:13,170:INFO:               fugue: Not installed
+2024-02-18 10:26:13,170:INFO:           streamlit: 1.31.0
+2024-02-18 10:26:13,170:INFO:             prophet: Not installed
+2024-02-18 10:26:13,170:INFO:None
+2024-02-18 10:26:13,170:INFO:Set up data.
+2024-02-18 10:26:13,172:INFO:Set up index.
+2024-02-18 10:26:13,172:INFO:Assigning column types.
+2024-02-18 10:26:13,173:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2024-02-18 10:26:13,173:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-18 10:26:13,174:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:26:13,174:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-18 10:26:13,174:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:26:13,174:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2024-02-18 10:26:13,174:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:26:13,174:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:26:13,175:INFO:Preparing preprocessing pipeline...
+2024-02-18 10:26:13,175:INFO:Set up simple imputation.
+2024-02-18 10:26:13,175:INFO:Set up feature normalization.
+2024-02-18 10:26:13,175:INFO:Set up PCA.
+2024-02-18 10:26:13,196:INFO:Finished creating preprocessing pipeline.
+2024-02-18 10:26:13,200:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\HARDIK~1\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Number of times pregnant',
+                                             'Plasma glucose concentration a 2 '
+                                             'hours in an oral glucose '
+                                             'tolerance test',
+                                             'Diastolic blood pressure (mm Hg)',
+                                             'Triceps skin fold thickness (mm)',
+                                             '2-Hour serum insulin (mu U/ml)',
+                                             'Body mass index (weight in '
+                                             'kg/(height in m)^2)',
+                                             'Diabetes pedigree function',
+                                             'Age (years)', 'Class variable'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=2)))])
+2024-02-18 10:26:13,201:INFO:Creating final display dataframe.
+2024-02-18 10:26:13,216:INFO:Setup _display_container:                Description                 Value
+0               Session id                  8524
+1      Original data shape              (768, 9)
+2   Transformed data shape              (768, 2)
+3         Numeric features                     9
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                     PCA                  True
+11              PCA method                linear
+12          PCA components                     2
+13                CPU Jobs                    -1
+14                 Use GPU                 False
+15          Log Experiment                 False
+16         Experiment Name  cluster-default-name
+17                     USI                  10fb
+2024-02-18 10:26:13,221:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:26:13,221:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:26:13,221:INFO:setup() successfully completed in 0.06s...............
+2024-02-18 10:26:13,223:INFO:Initializing create_model()
+2024-02-18 10:26:13,223:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F5B83D0>, estimator=kmeans, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:26:13,223:INFO:Checking exceptions
+2024-02-18 10:26:13,253:INFO:Importing untrained model
+2024-02-18 10:26:13,256:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:26:13,260:INFO:Fitting Model
+2024-02-18 10:26:13,272:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:26:13,331:INFO:KMeans(n_clusters=4, random_state=8524)
+2024-02-18 10:26:13,331:INFO:create_models() successfully completed......................................
+2024-02-18 10:26:13,334:INFO:Uploading results into container
+2024-02-18 10:26:13,337:INFO:Uploading model into container now
+2024-02-18 10:26:13,342:INFO:_master_model_container: 1
+2024-02-18 10:26:13,342:INFO:_display_container: 2
+2024-02-18 10:26:13,343:INFO:KMeans(n_clusters=4, random_state=8524)
+2024-02-18 10:26:13,343:INFO:create_model() successfully completed......................................
+2024-02-18 10:30:08,223:INFO:PyCaret ClusteringExperiment
+2024-02-18 10:30:08,223:INFO:Logging name: cluster-default-name
+2024-02-18 10:30:08,223:INFO:ML Usecase: MLUsecase.CLUSTERING
+2024-02-18 10:30:08,223:INFO:version 3.2.0
+2024-02-18 10:30:08,223:INFO:Initializing setup()
+2024-02-18 10:30:08,223:INFO:self.USI: 22ff
+2024-02-18 10:30:08,223:INFO:self._variable_keys: {'exp_id', 'log_plots_param', 'X', 'html_param', 'n_jobs_param', '_ml_usecase', 'pipeline', 'idx', 'data', 'gpu_param', 'USI', 'memory', 'exp_name_log', 'gpu_n_jobs_param', 'seed', 'logging_param', '_available_plots'}
+2024-02-18 10:30:08,223:INFO:Checking environment
+2024-02-18 10:30:08,223:INFO:python_version: 3.11.4
+2024-02-18 10:30:08,223:INFO:python_build: ('tags/v3.11.4:d2340ef', 'Jun  7 2023 05:45:37')
+2024-02-18 10:30:08,223:INFO:machine: AMD64
+2024-02-18 10:30:08,223:INFO:platform: Windows-10-10.0.22621-SP0
+2024-02-18 10:30:08,228:INFO:Memory: svmem(total=7887228928, available=1048010752, percent=86.7, used=6839218176, free=1048010752)
+2024-02-18 10:30:08,228:INFO:Physical Core: 6
+2024-02-18 10:30:08,228:INFO:Logical Core: 12
+2024-02-18 10:30:08,228:INFO:Checking libraries
+2024-02-18 10:30:08,228:INFO:System:
+2024-02-18 10:30:08,228:INFO:    python: 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]
+2024-02-18 10:30:08,228:INFO:executable: c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\python.exe
+2024-02-18 10:30:08,228:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-02-18 10:30:08,228:INFO:PyCaret required dependencies:
+2024-02-18 10:30:08,228:INFO:                 pip: 23.1.2
+2024-02-18 10:30:08,228:INFO:          setuptools: 69.0.3
+2024-02-18 10:30:08,228:INFO:             pycaret: 3.2.0
+2024-02-18 10:30:08,228:INFO:             IPython: 8.9.0
+2024-02-18 10:30:08,228:INFO:          ipywidgets: 8.1.1
+2024-02-18 10:30:08,228:INFO:                tqdm: 4.65.0
+2024-02-18 10:30:08,228:INFO:               numpy: 1.25.2
+2024-02-18 10:30:08,228:INFO:              pandas: 1.5.3
+2024-02-18 10:30:08,228:INFO:              jinja2: 3.1.2
+2024-02-18 10:30:08,228:INFO:               scipy: 1.10.1
+2024-02-18 10:30:08,228:INFO:              joblib: 1.3.1
+2024-02-18 10:30:08,228:INFO:             sklearn: 1.2.2
+2024-02-18 10:30:08,228:INFO:                pyod: 1.1.3
+2024-02-18 10:30:08,228:INFO:            imblearn: 0.11.0
+2024-02-18 10:30:08,228:INFO:   category_encoders: 2.6.3
+2024-02-18 10:30:08,228:INFO:            lightgbm: 4.2.0
+2024-02-18 10:30:08,228:INFO:               numba: 0.59.0
+2024-02-18 10:30:08,228:INFO:            requests: 2.31.0
+2024-02-18 10:30:08,228:INFO:          matplotlib: 3.6.0
+2024-02-18 10:30:08,228:INFO:          scikitplot: 0.3.7
+2024-02-18 10:30:08,229:INFO:         yellowbrick: 1.5
+2024-02-18 10:30:08,229:INFO:              plotly: 5.18.0
+2024-02-18 10:30:08,229:INFO:    plotly-resampler: Not installed
+2024-02-18 10:30:08,229:INFO:             kaleido: 0.2.1
+2024-02-18 10:30:08,229:INFO:           schemdraw: 0.15
+2024-02-18 10:30:08,229:INFO:         statsmodels: 0.14.1
+2024-02-18 10:30:08,229:INFO:              sktime: 0.21.1
+2024-02-18 10:30:08,229:INFO:               tbats: 1.1.3
+2024-02-18 10:30:08,229:INFO:            pmdarima: 2.0.4
+2024-02-18 10:30:08,229:INFO:              psutil: 5.9.4
+2024-02-18 10:30:08,229:INFO:          markupsafe: 2.1.3
+2024-02-18 10:30:08,229:INFO:             pickle5: Not installed
+2024-02-18 10:30:08,229:INFO:         cloudpickle: 3.0.0
+2024-02-18 10:30:08,229:INFO:         deprecation: 2.1.0
+2024-02-18 10:30:08,229:INFO:              xxhash: 3.4.1
+2024-02-18 10:30:08,229:INFO:           wurlitzer: Not installed
+2024-02-18 10:30:08,229:INFO:PyCaret optional dependencies:
+2024-02-18 10:30:08,229:INFO:                shap: Not installed
+2024-02-18 10:30:08,229:INFO:           interpret: Not installed
+2024-02-18 10:30:08,229:INFO:                umap: Not installed
+2024-02-18 10:30:08,229:INFO:     ydata_profiling: Not installed
+2024-02-18 10:30:08,229:INFO:  explainerdashboard: Not installed
+2024-02-18 10:30:08,229:INFO:             autoviz: Not installed
+2024-02-18 10:30:08,229:INFO:           fairlearn: Not installed
+2024-02-18 10:30:08,229:INFO:          deepchecks: Not installed
+2024-02-18 10:30:08,229:INFO:             xgboost: 2.0.3
+2024-02-18 10:30:08,229:INFO:            catboost: 1.2.2
+2024-02-18 10:30:08,229:INFO:              kmodes: Not installed
+2024-02-18 10:30:08,229:INFO:             mlxtend: 0.22.0
+2024-02-18 10:30:08,229:INFO:       statsforecast: Not installed
+2024-02-18 10:30:08,229:INFO:        tune_sklearn: Not installed
+2024-02-18 10:30:08,229:INFO:                 ray: Not installed
+2024-02-18 10:30:08,229:INFO:            hyperopt: Not installed
+2024-02-18 10:30:08,229:INFO:              optuna: Not installed
+2024-02-18 10:30:08,229:INFO:               skopt: Not installed
+2024-02-18 10:30:08,230:INFO:              mlflow: Not installed
+2024-02-18 10:30:08,230:INFO:              gradio: Not installed
+2024-02-18 10:30:08,230:INFO:             fastapi: 0.100.0
+2024-02-18 10:30:08,230:INFO:             uvicorn: Not installed
+2024-02-18 10:30:08,230:INFO:              m2cgen: Not installed
+2024-02-18 10:30:08,230:INFO:           evidently: Not installed
+2024-02-18 10:30:08,230:INFO:               fugue: Not installed
+2024-02-18 10:30:08,230:INFO:           streamlit: 1.31.0
+2024-02-18 10:30:08,230:INFO:             prophet: Not installed
+2024-02-18 10:30:08,230:INFO:None
+2024-02-18 10:30:08,230:INFO:Set up data.
+2024-02-18 10:30:08,232:INFO:Set up index.
+2024-02-18 10:30:08,232:INFO:Assigning column types.
+2024-02-18 10:30:08,234:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2024-02-18 10:30:08,234:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-18 10:30:08,234:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:30:08,234:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-18 10:30:08,234:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:30:08,234:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2024-02-18 10:30:08,234:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:30:08,234:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:30:08,235:INFO:Preparing preprocessing pipeline...
+2024-02-18 10:30:08,235:INFO:Set up simple imputation.
+2024-02-18 10:30:08,235:INFO:Set up feature normalization.
+2024-02-18 10:30:08,235:INFO:Set up PCA.
+2024-02-18 10:30:08,255:INFO:Finished creating preprocessing pipeline.
+2024-02-18 10:30:08,259:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\HARDIK~1\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Number of times pregnant',
+                                             'Plasma glucose concentration a 2 '
+                                             'hours in an oral glucose '
+                                             'tolerance test',
+                                             'Diastolic blood pressure (mm Hg)',
+                                             'Triceps skin fold thickness (mm)',
+                                             '2-Hour serum insulin (mu U/ml)',
+                                             'Body mass index (weight in '
+                                             'kg/(height in m)^2)',
+                                             'Diabetes pedigree function',
+                                             'Age (years)', 'Class variable'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=2)))])
+2024-02-18 10:30:08,259:INFO:Creating final display dataframe.
+2024-02-18 10:30:08,274:INFO:Setup _display_container:                Description                 Value
+0               Session id                  2608
+1      Original data shape              (768, 9)
+2   Transformed data shape              (768, 2)
+3         Numeric features                     9
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                     PCA                  True
+11              PCA method                linear
+12          PCA components                     2
+13                CPU Jobs                    -1
+14                 Use GPU                 False
+15          Log Experiment                 False
+16         Experiment Name  cluster-default-name
+17                     USI                  22ff
+2024-02-18 10:30:08,278:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:30:08,278:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:30:08,278:INFO:setup() successfully completed in 0.06s...............
+2024-02-18 10:30:08,280:INFO:Initializing create_model()
+2024-02-18 10:30:08,280:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x0000021248EEEB90>, estimator=kmeans, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:30:08,280:INFO:Checking exceptions
+2024-02-18 10:30:08,308:INFO:Importing untrained model
+2024-02-18 10:30:08,310:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:30:08,312:INFO:Fitting Model
+2024-02-18 10:30:08,323:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:30:08,375:INFO:KMeans(n_clusters=4, random_state=2608)
+2024-02-18 10:30:08,375:INFO:create_models() successfully completed......................................
+2024-02-18 10:30:08,378:INFO:Uploading results into container
+2024-02-18 10:30:08,380:INFO:Uploading model into container now
+2024-02-18 10:30:08,384:INFO:_master_model_container: 1
+2024-02-18 10:30:08,384:INFO:_display_container: 2
+2024-02-18 10:30:08,385:INFO:KMeans(n_clusters=4, random_state=2608)
+2024-02-18 10:30:08,385:INFO:create_model() successfully completed......................................
+2024-02-18 10:30:51,217:INFO:PyCaret ClusteringExperiment
+2024-02-18 10:30:51,217:INFO:Logging name: cluster-default-name
+2024-02-18 10:30:51,217:INFO:ML Usecase: MLUsecase.CLUSTERING
+2024-02-18 10:30:51,217:INFO:version 3.2.0
+2024-02-18 10:30:51,217:INFO:Initializing setup()
+2024-02-18 10:30:51,217:INFO:self.USI: 0317
+2024-02-18 10:30:51,217:INFO:self._variable_keys: {'exp_id', 'log_plots_param', 'X', 'html_param', 'n_jobs_param', '_ml_usecase', 'pipeline', 'idx', 'data', 'gpu_param', 'USI', 'memory', 'exp_name_log', 'gpu_n_jobs_param', 'seed', 'logging_param', '_available_plots'}
+2024-02-18 10:30:51,217:INFO:Checking environment
+2024-02-18 10:30:51,217:INFO:python_version: 3.11.4
+2024-02-18 10:30:51,217:INFO:python_build: ('tags/v3.11.4:d2340ef', 'Jun  7 2023 05:45:37')
+2024-02-18 10:30:51,217:INFO:machine: AMD64
+2024-02-18 10:30:51,217:INFO:platform: Windows-10-10.0.22621-SP0
+2024-02-18 10:30:51,222:INFO:Memory: svmem(total=7887228928, available=1092493312, percent=86.1, used=6794735616, free=1092493312)
+2024-02-18 10:30:51,222:INFO:Physical Core: 6
+2024-02-18 10:30:51,222:INFO:Logical Core: 12
+2024-02-18 10:30:51,222:INFO:Checking libraries
+2024-02-18 10:30:51,222:INFO:System:
+2024-02-18 10:30:51,222:INFO:    python: 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]
+2024-02-18 10:30:51,222:INFO:executable: c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\python.exe
+2024-02-18 10:30:51,222:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-02-18 10:30:51,222:INFO:PyCaret required dependencies:
+2024-02-18 10:30:51,222:INFO:                 pip: 23.1.2
+2024-02-18 10:30:51,222:INFO:          setuptools: 69.0.3
+2024-02-18 10:30:51,222:INFO:             pycaret: 3.2.0
+2024-02-18 10:30:51,222:INFO:             IPython: 8.9.0
+2024-02-18 10:30:51,222:INFO:          ipywidgets: 8.1.1
+2024-02-18 10:30:51,222:INFO:                tqdm: 4.65.0
+2024-02-18 10:30:51,222:INFO:               numpy: 1.25.2
+2024-02-18 10:30:51,222:INFO:              pandas: 1.5.3
+2024-02-18 10:30:51,222:INFO:              jinja2: 3.1.2
+2024-02-18 10:30:51,222:INFO:               scipy: 1.10.1
+2024-02-18 10:30:51,222:INFO:              joblib: 1.3.1
+2024-02-18 10:30:51,223:INFO:             sklearn: 1.2.2
+2024-02-18 10:30:51,223:INFO:                pyod: 1.1.3
+2024-02-18 10:30:51,223:INFO:            imblearn: 0.11.0
+2024-02-18 10:30:51,223:INFO:   category_encoders: 2.6.3
+2024-02-18 10:30:51,223:INFO:            lightgbm: 4.2.0
+2024-02-18 10:30:51,223:INFO:               numba: 0.59.0
+2024-02-18 10:30:51,223:INFO:            requests: 2.31.0
+2024-02-18 10:30:51,223:INFO:          matplotlib: 3.6.0
+2024-02-18 10:30:51,223:INFO:          scikitplot: 0.3.7
+2024-02-18 10:30:51,223:INFO:         yellowbrick: 1.5
+2024-02-18 10:30:51,223:INFO:              plotly: 5.18.0
+2024-02-18 10:30:51,223:INFO:    plotly-resampler: Not installed
+2024-02-18 10:30:51,223:INFO:             kaleido: 0.2.1
+2024-02-18 10:30:51,223:INFO:           schemdraw: 0.15
+2024-02-18 10:30:51,223:INFO:         statsmodels: 0.14.1
+2024-02-18 10:30:51,223:INFO:              sktime: 0.21.1
+2024-02-18 10:30:51,223:INFO:               tbats: 1.1.3
+2024-02-18 10:30:51,223:INFO:            pmdarima: 2.0.4
+2024-02-18 10:30:51,223:INFO:              psutil: 5.9.4
+2024-02-18 10:30:51,223:INFO:          markupsafe: 2.1.3
+2024-02-18 10:30:51,223:INFO:             pickle5: Not installed
+2024-02-18 10:30:51,223:INFO:         cloudpickle: 3.0.0
+2024-02-18 10:30:51,223:INFO:         deprecation: 2.1.0
+2024-02-18 10:30:51,223:INFO:              xxhash: 3.4.1
+2024-02-18 10:30:51,223:INFO:           wurlitzer: Not installed
+2024-02-18 10:30:51,223:INFO:PyCaret optional dependencies:
+2024-02-18 10:30:51,223:INFO:                shap: Not installed
+2024-02-18 10:30:51,223:INFO:           interpret: Not installed
+2024-02-18 10:30:51,223:INFO:                umap: Not installed
+2024-02-18 10:30:51,223:INFO:     ydata_profiling: Not installed
+2024-02-18 10:30:51,223:INFO:  explainerdashboard: Not installed
+2024-02-18 10:30:51,223:INFO:             autoviz: Not installed
+2024-02-18 10:30:51,223:INFO:           fairlearn: Not installed
+2024-02-18 10:30:51,223:INFO:          deepchecks: Not installed
+2024-02-18 10:30:51,223:INFO:             xgboost: 2.0.3
+2024-02-18 10:30:51,223:INFO:            catboost: 1.2.2
+2024-02-18 10:30:51,223:INFO:              kmodes: Not installed
+2024-02-18 10:30:51,223:INFO:             mlxtend: 0.22.0
+2024-02-18 10:30:51,223:INFO:       statsforecast: Not installed
+2024-02-18 10:30:51,223:INFO:        tune_sklearn: Not installed
+2024-02-18 10:30:51,223:INFO:                 ray: Not installed
+2024-02-18 10:30:51,223:INFO:            hyperopt: Not installed
+2024-02-18 10:30:51,223:INFO:              optuna: Not installed
+2024-02-18 10:30:51,223:INFO:               skopt: Not installed
+2024-02-18 10:30:51,223:INFO:              mlflow: Not installed
+2024-02-18 10:30:51,223:INFO:              gradio: Not installed
+2024-02-18 10:30:51,224:INFO:             fastapi: 0.100.0
+2024-02-18 10:30:51,224:INFO:             uvicorn: Not installed
+2024-02-18 10:30:51,224:INFO:              m2cgen: Not installed
+2024-02-18 10:30:51,224:INFO:           evidently: Not installed
+2024-02-18 10:30:51,224:INFO:               fugue: Not installed
+2024-02-18 10:30:51,224:INFO:           streamlit: 1.31.0
+2024-02-18 10:30:51,224:INFO:             prophet: Not installed
+2024-02-18 10:30:51,224:INFO:None
+2024-02-18 10:30:51,224:INFO:Set up data.
+2024-02-18 10:30:51,227:INFO:Set up index.
+2024-02-18 10:30:51,227:INFO:Assigning column types.
+2024-02-18 10:30:51,228:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2024-02-18 10:30:51,228:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-18 10:30:51,229:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:30:51,229:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-18 10:30:51,229:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:30:51,229:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2024-02-18 10:30:51,229:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:30:51,229:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:30:51,230:INFO:Preparing preprocessing pipeline...
+2024-02-18 10:30:51,230:INFO:Set up simple imputation.
+2024-02-18 10:30:51,230:INFO:Set up feature normalization.
+2024-02-18 10:30:51,230:INFO:Set up PCA.
+2024-02-18 10:30:51,255:INFO:Finished creating preprocessing pipeline.
+2024-02-18 10:30:51,259:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\HARDIK~1\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Number of times pregnant',
+                                             'Plasma glucose concentration a 2 '
+                                             'hours in an oral glucose '
+                                             'tolerance test',
+                                             'Diastolic blood pressure (mm Hg)',
+                                             'Triceps skin fold thickness (mm)',
+                                             '2-Hour serum insulin (mu U/ml)',
+                                             'Body mass index (weight in '
+                                             'kg/(height in m)^2)',
+                                             'Diabetes pedigree function',
+                                             'Age (years)', 'Class variable'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=2)))])
+2024-02-18 10:30:51,259:INFO:Creating final display dataframe.
+2024-02-18 10:30:51,277:INFO:Setup _display_container:                Description                 Value
+0               Session id                  3176
+1      Original data shape              (768, 9)
+2   Transformed data shape              (768, 2)
+3         Numeric features                     9
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                     PCA                  True
+11              PCA method                linear
+12          PCA components                     2
+13                CPU Jobs                    -1
+14                 Use GPU                 False
+15          Log Experiment                 False
+16         Experiment Name  cluster-default-name
+17                     USI                  0317
+2024-02-18 10:30:51,281:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:30:51,281:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:30:51,281:INFO:setup() successfully completed in 0.07s...............
+2024-02-18 10:30:51,283:INFO:Initializing create_model()
+2024-02-18 10:30:51,283:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F600650>, estimator=kmeans, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:30:51,283:INFO:Checking exceptions
+2024-02-18 10:30:51,313:INFO:Importing untrained model
+2024-02-18 10:30:51,315:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:30:51,319:INFO:Fitting Model
+2024-02-18 10:30:51,332:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:30:51,388:INFO:KMeans(n_clusters=4, random_state=3176)
+2024-02-18 10:30:51,388:INFO:create_models() successfully completed......................................
+2024-02-18 10:30:51,391:INFO:Uploading results into container
+2024-02-18 10:30:51,394:INFO:Uploading model into container now
+2024-02-18 10:30:51,398:INFO:_master_model_container: 1
+2024-02-18 10:30:51,398:INFO:_display_container: 2
+2024-02-18 10:30:51,399:INFO:KMeans(n_clusters=4, random_state=3176)
+2024-02-18 10:30:51,399:INFO:create_model() successfully completed......................................
+2024-02-18 10:32:37,992:INFO:PyCaret ClusteringExperiment
+2024-02-18 10:32:37,992:INFO:Logging name: cluster-default-name
+2024-02-18 10:32:37,992:INFO:ML Usecase: MLUsecase.CLUSTERING
+2024-02-18 10:32:37,992:INFO:version 3.2.0
+2024-02-18 10:32:37,992:INFO:Initializing setup()
+2024-02-18 10:32:37,992:INFO:self.USI: ce8b
+2024-02-18 10:32:37,992:INFO:self._variable_keys: {'exp_id', 'log_plots_param', 'X', 'html_param', 'n_jobs_param', '_ml_usecase', 'pipeline', 'idx', 'data', 'gpu_param', 'USI', 'memory', 'exp_name_log', 'gpu_n_jobs_param', 'seed', 'logging_param', '_available_plots'}
+2024-02-18 10:32:37,992:INFO:Checking environment
+2024-02-18 10:32:37,992:INFO:python_version: 3.11.4
+2024-02-18 10:32:37,992:INFO:python_build: ('tags/v3.11.4:d2340ef', 'Jun  7 2023 05:45:37')
+2024-02-18 10:32:37,992:INFO:machine: AMD64
+2024-02-18 10:32:37,992:INFO:platform: Windows-10-10.0.22621-SP0
+2024-02-18 10:32:37,997:INFO:Memory: svmem(total=7887228928, available=1050521600, percent=86.7, used=6836707328, free=1050521600)
+2024-02-18 10:32:37,997:INFO:Physical Core: 6
+2024-02-18 10:32:37,997:INFO:Logical Core: 12
+2024-02-18 10:32:37,997:INFO:Checking libraries
+2024-02-18 10:32:37,997:INFO:System:
+2024-02-18 10:32:37,997:INFO:    python: 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]
+2024-02-18 10:32:37,997:INFO:executable: c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\python.exe
+2024-02-18 10:32:37,997:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-02-18 10:32:37,997:INFO:PyCaret required dependencies:
+2024-02-18 10:32:37,997:INFO:                 pip: 23.1.2
+2024-02-18 10:32:37,997:INFO:          setuptools: 69.0.3
+2024-02-18 10:32:37,997:INFO:             pycaret: 3.2.0
+2024-02-18 10:32:37,997:INFO:             IPython: 8.9.0
+2024-02-18 10:32:37,997:INFO:          ipywidgets: 8.1.1
+2024-02-18 10:32:37,997:INFO:                tqdm: 4.65.0
+2024-02-18 10:32:37,997:INFO:               numpy: 1.25.2
+2024-02-18 10:32:37,997:INFO:              pandas: 1.5.3
+2024-02-18 10:32:37,997:INFO:              jinja2: 3.1.2
+2024-02-18 10:32:37,997:INFO:               scipy: 1.10.1
+2024-02-18 10:32:37,998:INFO:              joblib: 1.3.1
+2024-02-18 10:32:37,998:INFO:             sklearn: 1.2.2
+2024-02-18 10:32:37,998:INFO:                pyod: 1.1.3
+2024-02-18 10:32:37,998:INFO:            imblearn: 0.11.0
+2024-02-18 10:32:37,998:INFO:   category_encoders: 2.6.3
+2024-02-18 10:32:37,998:INFO:            lightgbm: 4.2.0
+2024-02-18 10:32:37,998:INFO:               numba: 0.59.0
+2024-02-18 10:32:37,998:INFO:            requests: 2.31.0
+2024-02-18 10:32:37,998:INFO:          matplotlib: 3.6.0
+2024-02-18 10:32:37,998:INFO:          scikitplot: 0.3.7
+2024-02-18 10:32:37,998:INFO:         yellowbrick: 1.5
+2024-02-18 10:32:37,998:INFO:              plotly: 5.18.0
+2024-02-18 10:32:37,998:INFO:    plotly-resampler: Not installed
+2024-02-18 10:32:37,998:INFO:             kaleido: 0.2.1
+2024-02-18 10:32:37,998:INFO:           schemdraw: 0.15
+2024-02-18 10:32:37,998:INFO:         statsmodels: 0.14.1
+2024-02-18 10:32:37,998:INFO:              sktime: 0.21.1
+2024-02-18 10:32:37,998:INFO:               tbats: 1.1.3
+2024-02-18 10:32:37,998:INFO:            pmdarima: 2.0.4
+2024-02-18 10:32:37,998:INFO:              psutil: 5.9.4
+2024-02-18 10:32:37,998:INFO:          markupsafe: 2.1.3
+2024-02-18 10:32:37,998:INFO:             pickle5: Not installed
+2024-02-18 10:32:37,998:INFO:         cloudpickle: 3.0.0
+2024-02-18 10:32:37,998:INFO:         deprecation: 2.1.0
+2024-02-18 10:32:37,998:INFO:              xxhash: 3.4.1
+2024-02-18 10:32:37,998:INFO:           wurlitzer: Not installed
+2024-02-18 10:32:37,998:INFO:PyCaret optional dependencies:
+2024-02-18 10:32:37,998:INFO:                shap: Not installed
+2024-02-18 10:32:37,998:INFO:           interpret: Not installed
+2024-02-18 10:32:37,998:INFO:                umap: Not installed
+2024-02-18 10:32:37,998:INFO:     ydata_profiling: Not installed
+2024-02-18 10:32:37,998:INFO:  explainerdashboard: Not installed
+2024-02-18 10:32:37,998:INFO:             autoviz: Not installed
+2024-02-18 10:32:37,998:INFO:           fairlearn: Not installed
+2024-02-18 10:32:37,998:INFO:          deepchecks: Not installed
+2024-02-18 10:32:37,998:INFO:             xgboost: 2.0.3
+2024-02-18 10:32:37,998:INFO:            catboost: 1.2.2
+2024-02-18 10:32:37,998:INFO:              kmodes: Not installed
+2024-02-18 10:32:37,998:INFO:             mlxtend: 0.22.0
+2024-02-18 10:32:37,999:INFO:       statsforecast: Not installed
+2024-02-18 10:32:37,999:INFO:        tune_sklearn: Not installed
+2024-02-18 10:32:37,999:INFO:                 ray: Not installed
+2024-02-18 10:32:37,999:INFO:            hyperopt: Not installed
+2024-02-18 10:32:37,999:INFO:              optuna: Not installed
+2024-02-18 10:32:37,999:INFO:               skopt: Not installed
+2024-02-18 10:32:37,999:INFO:              mlflow: Not installed
+2024-02-18 10:32:37,999:INFO:              gradio: Not installed
+2024-02-18 10:32:37,999:INFO:             fastapi: 0.100.0
+2024-02-18 10:32:37,999:INFO:             uvicorn: Not installed
+2024-02-18 10:32:37,999:INFO:              m2cgen: Not installed
+2024-02-18 10:32:37,999:INFO:           evidently: Not installed
+2024-02-18 10:32:37,999:INFO:               fugue: Not installed
+2024-02-18 10:32:37,999:INFO:           streamlit: 1.31.0
+2024-02-18 10:32:37,999:INFO:             prophet: Not installed
+2024-02-18 10:32:37,999:INFO:None
+2024-02-18 10:32:37,999:INFO:Set up data.
+2024-02-18 10:32:38,001:INFO:Set up index.
+2024-02-18 10:32:38,002:INFO:Assigning column types.
+2024-02-18 10:32:38,003:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2024-02-18 10:32:38,003:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-18 10:32:38,003:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:32:38,003:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-18 10:32:38,003:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:32:38,003:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2024-02-18 10:32:38,004:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:32:38,004:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:32:38,005:INFO:Preparing preprocessing pipeline...
+2024-02-18 10:32:38,005:INFO:Set up simple imputation.
+2024-02-18 10:32:38,005:INFO:Set up feature normalization.
+2024-02-18 10:32:38,005:INFO:Set up PCA.
+2024-02-18 10:32:38,025:INFO:Finished creating preprocessing pipeline.
+2024-02-18 10:32:38,030:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\HARDIK~1\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Number of times pregnant',
+                                             'Plasma glucose concentration a 2 '
+                                             'hours in an oral glucose '
+                                             'tolerance test',
+                                             'Diastolic blood pressure (mm Hg)',
+                                             'Triceps skin fold thickness (mm)',
+                                             '2-Hour serum insulin (mu U/ml)',
+                                             'Body mass index (weight in '
+                                             'kg/(height in m)^2)',
+                                             'Diabetes pedigree function',
+                                             'Age (years)', 'Class variable'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=2)))])
+2024-02-18 10:32:38,030:INFO:Creating final display dataframe.
+2024-02-18 10:32:38,046:INFO:Setup _display_container:                Description                 Value
+0               Session id                  1398
+1      Original data shape              (768, 9)
+2   Transformed data shape              (768, 2)
+3         Numeric features                     9
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                     PCA                  True
+11              PCA method                linear
+12          PCA components                     2
+13                CPU Jobs                    -1
+14                 Use GPU                 False
+15          Log Experiment                 False
+16         Experiment Name  cluster-default-name
+17                     USI                  ce8b
+2024-02-18 10:32:38,049:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:32:38,049:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:32:38,050:INFO:setup() successfully completed in 0.06s...............
+2024-02-18 10:32:38,052:INFO:Initializing create_model()
+2024-02-18 10:32:38,052:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F372B90>, estimator=kmeans, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:32:38,052:INFO:Checking exceptions
+2024-02-18 10:32:38,085:INFO:Importing untrained model
+2024-02-18 10:32:38,087:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:32:38,091:INFO:Fitting Model
+2024-02-18 10:32:38,104:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:32:38,158:INFO:KMeans(n_clusters=4, random_state=1398)
+2024-02-18 10:32:38,158:INFO:create_models() successfully completed......................................
+2024-02-18 10:32:38,161:INFO:Uploading results into container
+2024-02-18 10:32:38,163:INFO:Uploading model into container now
+2024-02-18 10:32:38,168:INFO:_master_model_container: 1
+2024-02-18 10:32:38,168:INFO:_display_container: 2
+2024-02-18 10:32:38,169:INFO:KMeans(n_clusters=4, random_state=1398)
+2024-02-18 10:32:38,169:INFO:create_model() successfully completed......................................
+2024-02-18 10:33:54,193:INFO:PyCaret ClusteringExperiment
+2024-02-18 10:33:54,193:INFO:Logging name: cluster-default-name
+2024-02-18 10:33:54,193:INFO:ML Usecase: MLUsecase.CLUSTERING
+2024-02-18 10:33:54,193:INFO:version 3.2.0
+2024-02-18 10:33:54,193:INFO:Initializing setup()
+2024-02-18 10:33:54,193:INFO:self.USI: a24e
+2024-02-18 10:33:54,193:INFO:self._variable_keys: {'exp_id', 'log_plots_param', 'X', 'html_param', 'n_jobs_param', '_ml_usecase', 'pipeline', 'idx', 'data', 'gpu_param', 'USI', 'memory', 'exp_name_log', 'gpu_n_jobs_param', 'seed', 'logging_param', '_available_plots'}
+2024-02-18 10:33:54,194:INFO:Checking environment
+2024-02-18 10:33:54,194:INFO:python_version: 3.11.4
+2024-02-18 10:33:54,194:INFO:python_build: ('tags/v3.11.4:d2340ef', 'Jun  7 2023 05:45:37')
+2024-02-18 10:33:54,194:INFO:machine: AMD64
+2024-02-18 10:33:54,194:INFO:platform: Windows-10-10.0.22621-SP0
+2024-02-18 10:33:54,198:INFO:Memory: svmem(total=7887228928, available=999628800, percent=87.3, used=6887600128, free=999628800)
+2024-02-18 10:33:54,198:INFO:Physical Core: 6
+2024-02-18 10:33:54,198:INFO:Logical Core: 12
+2024-02-18 10:33:54,198:INFO:Checking libraries
+2024-02-18 10:33:54,198:INFO:System:
+2024-02-18 10:33:54,198:INFO:    python: 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]
+2024-02-18 10:33:54,198:INFO:executable: c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\python.exe
+2024-02-18 10:33:54,198:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-02-18 10:33:54,198:INFO:PyCaret required dependencies:
+2024-02-18 10:33:54,198:INFO:                 pip: 23.1.2
+2024-02-18 10:33:54,198:INFO:          setuptools: 69.0.3
+2024-02-18 10:33:54,198:INFO:             pycaret: 3.2.0
+2024-02-18 10:33:54,198:INFO:             IPython: 8.9.0
+2024-02-18 10:33:54,198:INFO:          ipywidgets: 8.1.1
+2024-02-18 10:33:54,198:INFO:                tqdm: 4.65.0
+2024-02-18 10:33:54,198:INFO:               numpy: 1.25.2
+2024-02-18 10:33:54,198:INFO:              pandas: 1.5.3
+2024-02-18 10:33:54,198:INFO:              jinja2: 3.1.2
+2024-02-18 10:33:54,198:INFO:               scipy: 1.10.1
+2024-02-18 10:33:54,198:INFO:              joblib: 1.3.1
+2024-02-18 10:33:54,198:INFO:             sklearn: 1.2.2
+2024-02-18 10:33:54,199:INFO:                pyod: 1.1.3
+2024-02-18 10:33:54,199:INFO:            imblearn: 0.11.0
+2024-02-18 10:33:54,199:INFO:   category_encoders: 2.6.3
+2024-02-18 10:33:54,199:INFO:            lightgbm: 4.2.0
+2024-02-18 10:33:54,199:INFO:               numba: 0.59.0
+2024-02-18 10:33:54,199:INFO:            requests: 2.31.0
+2024-02-18 10:33:54,199:INFO:          matplotlib: 3.6.0
+2024-02-18 10:33:54,199:INFO:          scikitplot: 0.3.7
+2024-02-18 10:33:54,199:INFO:         yellowbrick: 1.5
+2024-02-18 10:33:54,199:INFO:              plotly: 5.18.0
+2024-02-18 10:33:54,199:INFO:    plotly-resampler: Not installed
+2024-02-18 10:33:54,199:INFO:             kaleido: 0.2.1
+2024-02-18 10:33:54,199:INFO:           schemdraw: 0.15
+2024-02-18 10:33:54,199:INFO:         statsmodels: 0.14.1
+2024-02-18 10:33:54,199:INFO:              sktime: 0.21.1
+2024-02-18 10:33:54,199:INFO:               tbats: 1.1.3
+2024-02-18 10:33:54,199:INFO:            pmdarima: 2.0.4
+2024-02-18 10:33:54,199:INFO:              psutil: 5.9.4
+2024-02-18 10:33:54,199:INFO:          markupsafe: 2.1.3
+2024-02-18 10:33:54,199:INFO:             pickle5: Not installed
+2024-02-18 10:33:54,199:INFO:         cloudpickle: 3.0.0
+2024-02-18 10:33:54,199:INFO:         deprecation: 2.1.0
+2024-02-18 10:33:54,199:INFO:              xxhash: 3.4.1
+2024-02-18 10:33:54,199:INFO:           wurlitzer: Not installed
+2024-02-18 10:33:54,199:INFO:PyCaret optional dependencies:
+2024-02-18 10:33:54,199:INFO:                shap: Not installed
+2024-02-18 10:33:54,199:INFO:           interpret: Not installed
+2024-02-18 10:33:54,199:INFO:                umap: Not installed
+2024-02-18 10:33:54,199:INFO:     ydata_profiling: Not installed
+2024-02-18 10:33:54,199:INFO:  explainerdashboard: Not installed
+2024-02-18 10:33:54,199:INFO:             autoviz: Not installed
+2024-02-18 10:33:54,199:INFO:           fairlearn: Not installed
+2024-02-18 10:33:54,199:INFO:          deepchecks: Not installed
+2024-02-18 10:33:54,199:INFO:             xgboost: 2.0.3
+2024-02-18 10:33:54,199:INFO:            catboost: 1.2.2
+2024-02-18 10:33:54,199:INFO:              kmodes: Not installed
+2024-02-18 10:33:54,199:INFO:             mlxtend: 0.22.0
+2024-02-18 10:33:54,199:INFO:       statsforecast: Not installed
+2024-02-18 10:33:54,199:INFO:        tune_sklearn: Not installed
+2024-02-18 10:33:54,200:INFO:                 ray: Not installed
+2024-02-18 10:33:54,200:INFO:            hyperopt: Not installed
+2024-02-18 10:33:54,200:INFO:              optuna: Not installed
+2024-02-18 10:33:54,200:INFO:               skopt: Not installed
+2024-02-18 10:33:54,200:INFO:              mlflow: Not installed
+2024-02-18 10:33:54,200:INFO:              gradio: Not installed
+2024-02-18 10:33:54,200:INFO:             fastapi: 0.100.0
+2024-02-18 10:33:54,200:INFO:             uvicorn: Not installed
+2024-02-18 10:33:54,200:INFO:              m2cgen: Not installed
+2024-02-18 10:33:54,200:INFO:           evidently: Not installed
+2024-02-18 10:33:54,200:INFO:               fugue: Not installed
+2024-02-18 10:33:54,200:INFO:           streamlit: 1.31.0
+2024-02-18 10:33:54,200:INFO:             prophet: Not installed
+2024-02-18 10:33:54,200:INFO:None
+2024-02-18 10:33:54,200:INFO:Set up data.
+2024-02-18 10:33:54,202:INFO:Set up index.
+2024-02-18 10:33:54,202:INFO:Assigning column types.
+2024-02-18 10:33:54,204:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2024-02-18 10:33:54,204:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-18 10:33:54,204:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:33:54,204:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-18 10:33:54,204:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:33:54,204:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2024-02-18 10:33:54,204:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:33:54,205:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:33:54,205:INFO:Preparing preprocessing pipeline...
+2024-02-18 10:33:54,205:INFO:Set up simple imputation.
+2024-02-18 10:33:54,205:INFO:Set up feature normalization.
+2024-02-18 10:33:54,205:INFO:Set up PCA.
+2024-02-18 10:33:54,225:INFO:Finished creating preprocessing pipeline.
+2024-02-18 10:33:54,229:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\HARDIK~1\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Number of times pregnant',
+                                             'Plasma glucose concentration a 2 '
+                                             'hours in an oral glucose '
+                                             'tolerance test',
+                                             'Diastolic blood pressure (mm Hg)',
+                                             'Triceps skin fold thickness (mm)',
+                                             '2-Hour serum insulin (mu U/ml)',
+                                             'Body mass index (weight in '
+                                             'kg/(height in m)^2)',
+                                             'Diabetes pedigree function',
+                                             'Age (years)', 'Class variable'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=2)))])
+2024-02-18 10:33:54,229:INFO:Creating final display dataframe.
+2024-02-18 10:33:54,244:INFO:Setup _display_container:                Description                 Value
+0               Session id                  5355
+1      Original data shape              (768, 9)
+2   Transformed data shape              (768, 2)
+3         Numeric features                     9
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                     PCA                  True
+11              PCA method                linear
+12          PCA components                     2
+13                CPU Jobs                    -1
+14                 Use GPU                 False
+15          Log Experiment                 False
+16         Experiment Name  cluster-default-name
+17                     USI                  a24e
+2024-02-18 10:33:54,249:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:33:54,249:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:33:54,249:INFO:setup() successfully completed in 0.06s...............
+2024-02-18 10:33:54,251:INFO:Initializing create_model()
+2024-02-18 10:33:54,251:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127E06E490>, estimator=kmeans, num_clusters=2, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=False, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:33:54,251:INFO:Checking exceptions
+2024-02-18 10:33:54,273:INFO:Importing untrained model
+2024-02-18 10:33:54,273:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:33:54,274:INFO:Fitting Model
+2024-02-18 10:33:54,288:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:33:54,339:INFO:KMeans(n_clusters=2, random_state=5355)
+2024-02-18 10:33:54,340:INFO:create_models() successfully completed......................................
+2024-02-18 10:33:54,340:INFO:Uploading results into container
+2024-02-18 10:33:54,341:INFO:Uploading model into container now
+2024-02-18 10:33:54,341:INFO:_master_model_container: 1
+2024-02-18 10:33:54,341:INFO:_display_container: 2
+2024-02-18 10:33:54,342:INFO:KMeans(n_clusters=2, random_state=5355)
+2024-02-18 10:33:54,342:INFO:create_model() successfully completed......................................
+2024-02-18 10:33:54,447:INFO:Initializing assign_model()
+2024-02-18 10:33:54,447:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127E06E490>, model=KMeans(n_clusters=2, random_state=5355), transformation=False, score=True, verbose=True)
+2024-02-18 10:33:54,447:INFO:Checking exceptions
+2024-02-18 10:33:54,447:INFO:Determining Trained Model
+2024-02-18 10:33:54,447:INFO:Trained Model : K-Means Clustering
+2024-02-18 10:33:54,447:INFO:Copying data
+2024-02-18 10:33:54,448:INFO:(768, 10)
+2024-02-18 10:33:54,448:INFO:assign_model() successfully completed......................................
+2024-02-18 10:35:04,570:INFO:PyCaret ClusteringExperiment
+2024-02-18 10:35:04,570:INFO:Logging name: cluster-default-name
+2024-02-18 10:35:04,570:INFO:ML Usecase: MLUsecase.CLUSTERING
+2024-02-18 10:35:04,570:INFO:version 3.2.0
+2024-02-18 10:35:04,570:INFO:Initializing setup()
+2024-02-18 10:35:04,570:INFO:self.USI: 76d1
+2024-02-18 10:35:04,570:INFO:self._variable_keys: {'exp_id', 'log_plots_param', 'X', 'html_param', 'n_jobs_param', '_ml_usecase', 'pipeline', 'idx', 'data', 'gpu_param', 'USI', 'memory', 'exp_name_log', 'gpu_n_jobs_param', 'seed', 'logging_param', '_available_plots'}
+2024-02-18 10:35:04,570:INFO:Checking environment
+2024-02-18 10:35:04,570:INFO:python_version: 3.11.4
+2024-02-18 10:35:04,571:INFO:python_build: ('tags/v3.11.4:d2340ef', 'Jun  7 2023 05:45:37')
+2024-02-18 10:35:04,571:INFO:machine: AMD64
+2024-02-18 10:35:04,571:INFO:platform: Windows-10-10.0.22621-SP0
+2024-02-18 10:35:04,575:INFO:Memory: svmem(total=7887228928, available=994852864, percent=87.4, used=6892376064, free=994852864)
+2024-02-18 10:35:04,575:INFO:Physical Core: 6
+2024-02-18 10:35:04,575:INFO:Logical Core: 12
+2024-02-18 10:35:04,575:INFO:Checking libraries
+2024-02-18 10:35:04,575:INFO:System:
+2024-02-18 10:35:04,575:INFO:    python: 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]
+2024-02-18 10:35:04,575:INFO:executable: c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\python.exe
+2024-02-18 10:35:04,575:INFO:   machine: Windows-10-10.0.22621-SP0
+2024-02-18 10:35:04,575:INFO:PyCaret required dependencies:
+2024-02-18 10:35:04,575:INFO:                 pip: 23.1.2
+2024-02-18 10:35:04,575:INFO:          setuptools: 69.0.3
+2024-02-18 10:35:04,575:INFO:             pycaret: 3.2.0
+2024-02-18 10:35:04,575:INFO:             IPython: 8.9.0
+2024-02-18 10:35:04,575:INFO:          ipywidgets: 8.1.1
+2024-02-18 10:35:04,575:INFO:                tqdm: 4.65.0
+2024-02-18 10:35:04,575:INFO:               numpy: 1.25.2
+2024-02-18 10:35:04,575:INFO:              pandas: 1.5.3
+2024-02-18 10:35:04,575:INFO:              jinja2: 3.1.2
+2024-02-18 10:35:04,575:INFO:               scipy: 1.10.1
+2024-02-18 10:35:04,575:INFO:              joblib: 1.3.1
+2024-02-18 10:35:04,575:INFO:             sklearn: 1.2.2
+2024-02-18 10:35:04,575:INFO:                pyod: 1.1.3
+2024-02-18 10:35:04,575:INFO:            imblearn: 0.11.0
+2024-02-18 10:35:04,575:INFO:   category_encoders: 2.6.3
+2024-02-18 10:35:04,575:INFO:            lightgbm: 4.2.0
+2024-02-18 10:35:04,575:INFO:               numba: 0.59.0
+2024-02-18 10:35:04,575:INFO:            requests: 2.31.0
+2024-02-18 10:35:04,576:INFO:          matplotlib: 3.6.0
+2024-02-18 10:35:04,576:INFO:          scikitplot: 0.3.7
+2024-02-18 10:35:04,576:INFO:         yellowbrick: 1.5
+2024-02-18 10:35:04,576:INFO:              plotly: 5.18.0
+2024-02-18 10:35:04,576:INFO:    plotly-resampler: Not installed
+2024-02-18 10:35:04,576:INFO:             kaleido: 0.2.1
+2024-02-18 10:35:04,576:INFO:           schemdraw: 0.15
+2024-02-18 10:35:04,576:INFO:         statsmodels: 0.14.1
+2024-02-18 10:35:04,576:INFO:              sktime: 0.21.1
+2024-02-18 10:35:04,576:INFO:               tbats: 1.1.3
+2024-02-18 10:35:04,576:INFO:            pmdarima: 2.0.4
+2024-02-18 10:35:04,576:INFO:              psutil: 5.9.4
+2024-02-18 10:35:04,576:INFO:          markupsafe: 2.1.3
+2024-02-18 10:35:04,576:INFO:             pickle5: Not installed
+2024-02-18 10:35:04,576:INFO:         cloudpickle: 3.0.0
+2024-02-18 10:35:04,576:INFO:         deprecation: 2.1.0
+2024-02-18 10:35:04,576:INFO:              xxhash: 3.4.1
+2024-02-18 10:35:04,576:INFO:           wurlitzer: Not installed
+2024-02-18 10:35:04,576:INFO:PyCaret optional dependencies:
+2024-02-18 10:35:04,576:INFO:                shap: Not installed
+2024-02-18 10:35:04,576:INFO:           interpret: Not installed
+2024-02-18 10:35:04,576:INFO:                umap: Not installed
+2024-02-18 10:35:04,576:INFO:     ydata_profiling: Not installed
+2024-02-18 10:35:04,576:INFO:  explainerdashboard: Not installed
+2024-02-18 10:35:04,576:INFO:             autoviz: Not installed
+2024-02-18 10:35:04,576:INFO:           fairlearn: Not installed
+2024-02-18 10:35:04,576:INFO:          deepchecks: Not installed
+2024-02-18 10:35:04,576:INFO:             xgboost: 2.0.3
+2024-02-18 10:35:04,576:INFO:            catboost: 1.2.2
+2024-02-18 10:35:04,576:INFO:              kmodes: Not installed
+2024-02-18 10:35:04,576:INFO:             mlxtend: 0.22.0
+2024-02-18 10:35:04,576:INFO:       statsforecast: Not installed
+2024-02-18 10:35:04,576:INFO:        tune_sklearn: Not installed
+2024-02-18 10:35:04,576:INFO:                 ray: Not installed
+2024-02-18 10:35:04,576:INFO:            hyperopt: Not installed
+2024-02-18 10:35:04,577:INFO:              optuna: Not installed
+2024-02-18 10:35:04,577:INFO:               skopt: Not installed
+2024-02-18 10:35:04,577:INFO:              mlflow: Not installed
+2024-02-18 10:35:04,577:INFO:              gradio: Not installed
+2024-02-18 10:35:04,577:INFO:             fastapi: 0.100.0
+2024-02-18 10:35:04,577:INFO:             uvicorn: Not installed
+2024-02-18 10:35:04,577:INFO:              m2cgen: Not installed
+2024-02-18 10:35:04,577:INFO:           evidently: Not installed
+2024-02-18 10:35:04,577:INFO:               fugue: Not installed
+2024-02-18 10:35:04,577:INFO:           streamlit: 1.31.0
+2024-02-18 10:35:04,577:INFO:             prophet: Not installed
+2024-02-18 10:35:04,577:INFO:None
+2024-02-18 10:35:04,577:INFO:Set up data.
+2024-02-18 10:35:04,579:INFO:Set up index.
+2024-02-18 10:35:04,579:INFO:Assigning column types.
+2024-02-18 10:35:04,581:INFO:Engine successfully changes for model 'kmeans' to 'sklearn'.
+2024-02-18 10:35:04,581:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-18 10:35:04,581:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:35:04,581:INFO:Engine for model 'dbscan' has not been set explicitly, hence returning None.
+2024-02-18 10:35:04,581:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:35:04,581:INFO:Engine successfully changes for model 'dbscan' to 'sklearn'.
+2024-02-18 10:35:04,581:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:35:04,581:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:35:04,582:INFO:Preparing preprocessing pipeline...
+2024-02-18 10:35:04,582:INFO:Set up simple imputation.
+2024-02-18 10:35:04,582:INFO:Set up feature normalization.
+2024-02-18 10:35:04,582:INFO:Set up PCA.
+2024-02-18 10:35:04,602:INFO:Finished creating preprocessing pipeline.
+2024-02-18 10:35:04,606:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\HARDIK~1\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Number of times pregnant',
+                                             'Plasma glucose concentration a 2 '
+                                             'hours in an oral glucose '
+                                             'tolerance test',
+                                             'Diastolic blood pressure (mm Hg)',
+                                             'Triceps skin fold thickness (mm)',
+                                             '2-Hour serum insulin (mu U/ml)',
+                                             'Body mass index (weight in '
+                                             'kg/(height in m)^2)',
+                                             'Diabetes pedigree function',
+                                             'Age (years)', 'Class variable'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=2)))])
+2024-02-18 10:35:04,607:INFO:Creating final display dataframe.
+2024-02-18 10:35:04,622:INFO:Setup _display_container:                Description                 Value
+0               Session id                  2302
+1      Original data shape              (768, 9)
+2   Transformed data shape              (768, 2)
+3         Numeric features                     9
+4               Preprocess                  True
+5          Imputation type                simple
+6       Numeric imputation                  mean
+7   Categorical imputation                  mode
+8                Normalize                  True
+9         Normalize method                zscore
+10                     PCA                  True
+11              PCA method                linear
+12          PCA components                     2
+13                CPU Jobs                    -1
+14                 Use GPU                 False
+15          Log Experiment                 False
+16         Experiment Name  cluster-default-name
+17                     USI                  76d1
+2024-02-18 10:35:04,626:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:35:04,626:WARNING:
+'kmodes' is a soft dependency and not included in the pycaret installation. Please run: `pip install kmodes` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-02-18 10:35:04,626:INFO:setup() successfully completed in 0.06s...............
+2024-02-18 10:35:04,629:INFO:Initializing create_model()
+2024-02-18 10:35:04,629:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, estimator=kmeans, num_clusters=2, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=False, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:35:04,629:INFO:Checking exceptions
+2024-02-18 10:35:04,644:INFO:Importing untrained model
+2024-02-18 10:35:04,644:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:35:04,645:INFO:Fitting Model
+2024-02-18 10:35:04,654:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:35:04,704:INFO:KMeans(n_clusters=2, random_state=2302)
+2024-02-18 10:35:04,704:INFO:create_models() successfully completed......................................
+2024-02-18 10:35:04,704:INFO:Uploading results into container
+2024-02-18 10:35:04,706:INFO:Uploading model into container now
+2024-02-18 10:35:04,706:INFO:_master_model_container: 1
+2024-02-18 10:35:04,706:INFO:_display_container: 2
+2024-02-18 10:35:04,706:INFO:KMeans(n_clusters=2, random_state=2302)
+2024-02-18 10:35:04,706:INFO:create_model() successfully completed......................................
+2024-02-18 10:35:04,817:INFO:Initializing assign_model()
+2024-02-18 10:35:04,818:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, model=KMeans(n_clusters=2, random_state=2302), transformation=False, score=True, verbose=True)
+2024-02-18 10:35:04,818:INFO:Checking exceptions
+2024-02-18 10:35:04,818:INFO:Determining Trained Model
+2024-02-18 10:35:04,818:INFO:Trained Model : K-Means Clustering
+2024-02-18 10:35:04,818:INFO:Copying data
+2024-02-18 10:35:04,819:INFO:(768, 10)
+2024-02-18 10:35:04,819:INFO:assign_model() successfully completed......................................
+2024-02-18 10:35:04,835:INFO:Initializing create_model()
+2024-02-18 10:35:04,835:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, estimator=kmeans, num_clusters=3, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=False, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:35:04,835:INFO:Checking exceptions
+2024-02-18 10:35:04,850:INFO:Importing untrained model
+2024-02-18 10:35:04,850:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:35:04,851:INFO:Fitting Model
+2024-02-18 10:35:04,861:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:35:04,915:INFO:KMeans(n_clusters=3, random_state=2302)
+2024-02-18 10:35:04,915:INFO:create_models() successfully completed......................................
+2024-02-18 10:35:04,915:INFO:Uploading results into container
+2024-02-18 10:35:04,917:INFO:Uploading model into container now
+2024-02-18 10:35:04,917:INFO:_master_model_container: 2
+2024-02-18 10:35:04,918:INFO:_display_container: 3
+2024-02-18 10:35:04,918:INFO:KMeans(n_clusters=3, random_state=2302)
+2024-02-18 10:35:04,918:INFO:create_model() successfully completed......................................
+2024-02-18 10:35:05,058:INFO:Initializing assign_model()
+2024-02-18 10:35:05,058:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, model=KMeans(n_clusters=3, random_state=2302), transformation=False, score=True, verbose=True)
+2024-02-18 10:35:05,058:INFO:Checking exceptions
+2024-02-18 10:35:05,058:INFO:Determining Trained Model
+2024-02-18 10:35:05,058:INFO:Trained Model : K-Means Clustering
+2024-02-18 10:35:05,058:INFO:Copying data
+2024-02-18 10:35:05,059:INFO:(768, 10)
+2024-02-18 10:35:05,059:INFO:assign_model() successfully completed......................................
+2024-02-18 10:35:05,069:INFO:Initializing create_model()
+2024-02-18 10:35:05,069:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, estimator=kmeans, num_clusters=4, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=False, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:35:05,070:INFO:Checking exceptions
+2024-02-18 10:35:05,087:INFO:Importing untrained model
+2024-02-18 10:35:05,087:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:35:05,087:INFO:Fitting Model
+2024-02-18 10:35:05,098:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:35:05,159:INFO:KMeans(n_clusters=4, random_state=2302)
+2024-02-18 10:35:05,159:INFO:create_models() successfully completed......................................
+2024-02-18 10:35:05,159:INFO:Uploading results into container
+2024-02-18 10:35:05,161:INFO:Uploading model into container now
+2024-02-18 10:35:05,162:INFO:_master_model_container: 3
+2024-02-18 10:35:05,162:INFO:_display_container: 4
+2024-02-18 10:35:05,162:INFO:KMeans(n_clusters=4, random_state=2302)
+2024-02-18 10:35:05,162:INFO:create_model() successfully completed......................................
+2024-02-18 10:35:05,311:INFO:Initializing assign_model()
+2024-02-18 10:35:05,311:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, model=KMeans(n_clusters=4, random_state=2302), transformation=False, score=True, verbose=True)
+2024-02-18 10:35:05,311:INFO:Checking exceptions
+2024-02-18 10:35:05,311:INFO:Determining Trained Model
+2024-02-18 10:35:05,311:INFO:Trained Model : K-Means Clustering
+2024-02-18 10:35:05,312:INFO:Copying data
+2024-02-18 10:35:05,313:INFO:(768, 10)
+2024-02-18 10:35:05,313:INFO:assign_model() successfully completed......................................
+2024-02-18 10:35:05,323:INFO:Initializing create_model()
+2024-02-18 10:35:05,323:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, estimator=kmeans, num_clusters=5, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=False, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:35:05,323:INFO:Checking exceptions
+2024-02-18 10:35:05,339:INFO:Importing untrained model
+2024-02-18 10:35:05,339:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:35:05,340:INFO:Fitting Model
+2024-02-18 10:35:05,352:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:35:05,417:INFO:KMeans(n_clusters=5, random_state=2302)
+2024-02-18 10:35:05,417:INFO:create_models() successfully completed......................................
+2024-02-18 10:35:05,417:INFO:Uploading results into container
+2024-02-18 10:35:05,419:INFO:Uploading model into container now
+2024-02-18 10:35:05,419:INFO:_master_model_container: 4
+2024-02-18 10:35:05,419:INFO:_display_container: 5
+2024-02-18 10:35:05,420:INFO:KMeans(n_clusters=5, random_state=2302)
+2024-02-18 10:35:05,420:INFO:create_model() successfully completed......................................
+2024-02-18 10:35:05,553:INFO:Initializing assign_model()
+2024-02-18 10:35:05,553:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, model=KMeans(n_clusters=5, random_state=2302), transformation=False, score=True, verbose=True)
+2024-02-18 10:35:05,553:INFO:Checking exceptions
+2024-02-18 10:35:05,553:INFO:Determining Trained Model
+2024-02-18 10:35:05,553:INFO:Trained Model : K-Means Clustering
+2024-02-18 10:35:05,553:INFO:Copying data
+2024-02-18 10:35:05,554:INFO:(768, 10)
+2024-02-18 10:35:05,554:INFO:assign_model() successfully completed......................................
+2024-02-18 10:35:05,563:INFO:Initializing create_model()
+2024-02-18 10:35:05,563:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, estimator=kmeans, num_clusters=6, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=False, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:35:05,565:INFO:Checking exceptions
+2024-02-18 10:35:05,579:INFO:Importing untrained model
+2024-02-18 10:35:05,580:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:35:05,580:INFO:Fitting Model
+2024-02-18 10:35:05,591:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:35:05,648:INFO:KMeans(n_clusters=6, random_state=2302)
+2024-02-18 10:35:05,648:INFO:create_models() successfully completed......................................
+2024-02-18 10:35:05,648:INFO:Uploading results into container
+2024-02-18 10:35:05,650:INFO:Uploading model into container now
+2024-02-18 10:35:05,650:INFO:_master_model_container: 5
+2024-02-18 10:35:05,650:INFO:_display_container: 6
+2024-02-18 10:35:05,650:INFO:KMeans(n_clusters=6, random_state=2302)
+2024-02-18 10:35:05,650:INFO:create_model() successfully completed......................................
+2024-02-18 10:35:05,763:INFO:Initializing assign_model()
+2024-02-18 10:35:05,763:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, model=KMeans(n_clusters=6, random_state=2302), transformation=False, score=True, verbose=True)
+2024-02-18 10:35:05,763:INFO:Checking exceptions
+2024-02-18 10:35:05,763:INFO:Determining Trained Model
+2024-02-18 10:35:05,763:INFO:Trained Model : K-Means Clustering
+2024-02-18 10:35:05,763:INFO:Copying data
+2024-02-18 10:35:05,765:INFO:(768, 10)
+2024-02-18 10:35:05,765:INFO:assign_model() successfully completed......................................
+2024-02-18 10:35:05,775:INFO:Initializing create_model()
+2024-02-18 10:35:05,775:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, estimator=kmeans, num_clusters=7, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=False, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:35:05,775:INFO:Checking exceptions
+2024-02-18 10:35:05,791:INFO:Importing untrained model
+2024-02-18 10:35:05,791:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:35:05,792:INFO:Fitting Model
+2024-02-18 10:35:05,801:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:35:05,883:INFO:KMeans(n_clusters=7, random_state=2302)
+2024-02-18 10:35:05,883:INFO:create_models() successfully completed......................................
+2024-02-18 10:35:05,883:INFO:Uploading results into container
+2024-02-18 10:35:05,885:INFO:Uploading model into container now
+2024-02-18 10:35:05,885:INFO:_master_model_container: 6
+2024-02-18 10:35:05,885:INFO:_display_container: 7
+2024-02-18 10:35:05,885:INFO:KMeans(n_clusters=7, random_state=2302)
+2024-02-18 10:35:05,885:INFO:create_model() successfully completed......................................
+2024-02-18 10:35:06,024:INFO:Initializing assign_model()
+2024-02-18 10:35:06,024:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, model=KMeans(n_clusters=7, random_state=2302), transformation=False, score=True, verbose=True)
+2024-02-18 10:35:06,024:INFO:Checking exceptions
+2024-02-18 10:35:06,024:INFO:Determining Trained Model
+2024-02-18 10:35:06,024:INFO:Trained Model : K-Means Clustering
+2024-02-18 10:35:06,024:INFO:Copying data
+2024-02-18 10:35:06,026:INFO:(768, 10)
+2024-02-18 10:35:06,026:INFO:assign_model() successfully completed......................................
+2024-02-18 10:35:06,038:INFO:Initializing create_model()
+2024-02-18 10:35:06,038:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, estimator=kmeans, num_clusters=8, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=False, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:35:06,038:INFO:Checking exceptions
+2024-02-18 10:35:06,056:INFO:Importing untrained model
+2024-02-18 10:35:06,057:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:35:06,057:INFO:Fitting Model
+2024-02-18 10:35:06,069:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:35:06,153:INFO:KMeans(random_state=2302)
+2024-02-18 10:35:06,153:INFO:create_models() successfully completed......................................
+2024-02-18 10:35:06,153:INFO:Uploading results into container
+2024-02-18 10:35:06,154:INFO:Uploading model into container now
+2024-02-18 10:35:06,155:INFO:_master_model_container: 7
+2024-02-18 10:35:06,155:INFO:_display_container: 8
+2024-02-18 10:35:06,155:INFO:KMeans(random_state=2302)
+2024-02-18 10:35:06,155:INFO:create_model() successfully completed......................................
+2024-02-18 10:35:06,270:INFO:Initializing assign_model()
+2024-02-18 10:35:06,270:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, model=KMeans(random_state=2302), transformation=False, score=True, verbose=True)
+2024-02-18 10:35:06,270:INFO:Checking exceptions
+2024-02-18 10:35:06,270:INFO:Determining Trained Model
+2024-02-18 10:35:06,271:INFO:Trained Model : K-Means Clustering
+2024-02-18 10:35:06,271:INFO:Copying data
+2024-02-18 10:35:06,272:INFO:(768, 10)
+2024-02-18 10:35:06,272:INFO:assign_model() successfully completed......................................
+2024-02-18 10:35:06,281:INFO:Initializing create_model()
+2024-02-18 10:35:06,281:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, estimator=kmeans, num_clusters=9, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=False, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:35:06,281:INFO:Checking exceptions
+2024-02-18 10:35:06,297:INFO:Importing untrained model
+2024-02-18 10:35:06,297:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:35:06,298:INFO:Fitting Model
+2024-02-18 10:35:06,308:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:35:06,373:INFO:KMeans(n_clusters=9, random_state=2302)
+2024-02-18 10:35:06,373:INFO:create_models() successfully completed......................................
+2024-02-18 10:35:06,373:INFO:Uploading results into container
+2024-02-18 10:35:06,375:INFO:Uploading model into container now
+2024-02-18 10:35:06,376:INFO:_master_model_container: 8
+2024-02-18 10:35:06,376:INFO:_display_container: 9
+2024-02-18 10:35:06,376:INFO:KMeans(n_clusters=9, random_state=2302)
+2024-02-18 10:35:06,376:INFO:create_model() successfully completed......................................
+2024-02-18 10:35:06,523:INFO:Initializing assign_model()
+2024-02-18 10:35:06,523:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, model=KMeans(n_clusters=9, random_state=2302), transformation=False, score=True, verbose=True)
+2024-02-18 10:35:06,523:INFO:Checking exceptions
+2024-02-18 10:35:06,523:INFO:Determining Trained Model
+2024-02-18 10:35:06,524:INFO:Trained Model : K-Means Clustering
+2024-02-18 10:35:06,524:INFO:Copying data
+2024-02-18 10:35:06,525:INFO:(768, 10)
+2024-02-18 10:35:06,525:INFO:assign_model() successfully completed......................................
+2024-02-18 10:35:06,537:INFO:Initializing create_model()
+2024-02-18 10:35:06,537:INFO:create_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, estimator=kmeans, num_clusters=10, fraction=0.05, ground_truth=None, round=4, fit_kwargs=None, experiment_custom_tags=None, verbose=False, system=True, add_to_model_list=True, raise_num_clusters=False, display=None, kwargs={})
+2024-02-18 10:35:06,537:INFO:Checking exceptions
+2024-02-18 10:35:06,554:INFO:Importing untrained model
+2024-02-18 10:35:06,554:INFO:K-Means Clustering Imported successfully
+2024-02-18 10:35:06,555:INFO:Fitting Model
+2024-02-18 10:35:06,566:WARNING:c:\Users\Hardik Garg\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\cluster\_kmeans.py:870: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  warnings.warn(
+
+2024-02-18 10:35:06,637:INFO:KMeans(n_clusters=10, random_state=2302)
+2024-02-18 10:35:06,638:INFO:create_models() successfully completed......................................
+2024-02-18 10:35:06,638:INFO:Uploading results into container
+2024-02-18 10:35:06,640:INFO:Uploading model into container now
+2024-02-18 10:35:06,640:INFO:_master_model_container: 9
+2024-02-18 10:35:06,640:INFO:_display_container: 10
+2024-02-18 10:35:06,640:INFO:KMeans(n_clusters=10, random_state=2302)
+2024-02-18 10:35:06,640:INFO:create_model() successfully completed......................................
+2024-02-18 10:35:06,770:INFO:Initializing assign_model()
+2024-02-18 10:35:06,770:INFO:assign_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x000002127F639590>, model=KMeans(n_clusters=10, random_state=2302), transformation=False, score=True, verbose=True)
+2024-02-18 10:35:06,770:INFO:Checking exceptions
+2024-02-18 10:35:06,770:INFO:Determining Trained Model
+2024-02-18 10:35:06,770:INFO:Trained Model : K-Means Clustering
+2024-02-18 10:35:06,770:INFO:Copying data
+2024-02-18 10:35:06,771:INFO:(768, 10)
+2024-02-18 10:35:06,771:INFO:assign_model() successfully completed......................................
